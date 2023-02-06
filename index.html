@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Website</title>
+
+    <style>
+        div
+        {
+            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+
+        }
+        span{
+            text-decoration: wavy;
+            text-shadow: 1px;
+            font-style: italic;
+            color: rgb(6, 238, 255);
+        }
+
+    </style>
+
+
+</head>
+    <div id="red">This sentance have bacground color <span>Red</span></div>
+    <div id="yellow">This sentance have background color <span>Yellow</span></div>
+
+    <button type="button" id="btn_red" onclick="ChangeBackground_red()">Change First Sentance Color to Red</button>
+    <button type="button" id="btn_yellow" onclick="ChangeBackground_yellow()">Change Second Sentance Color to Yellow</button>
+
+    <a href="/eventhandler.js"></a>
+    <body>
+        <script type="text/javascript">
+
+            function ChangeBackground_red()
+            {
+                document.getElementById('red').style.backgroundColor='red'
+            }
+
+            function ChangeBackground_yellow()
+            {
+                document.getElementById('yellow').style.backgroundColor='yellow'
+            }
+
+        
+        </script>
+    </body>
+</html>
